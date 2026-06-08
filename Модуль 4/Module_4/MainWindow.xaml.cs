@@ -126,13 +126,15 @@ namespace Module_4
 
                 if (role == "admin")
                 {
-                    MessageBox.Show("Админ");
+                    DashboardWindow dashboard =
+                        new DashboardWindow();
+
+                    dashboard.Show();
                 }
                 else
                 {
                     MessageBox.Show("Пользователь");
                 }
-
 
                 this.Close();
             }
